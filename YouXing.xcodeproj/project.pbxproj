@@ -12,6 +12,9 @@
 		96757DCB1CA7D0920032E32C /* StartupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96757DCA1CA7D0920032E32C /* StartupViewController.m */; };
 		96D06EE91CA82B7B00C6627C /* CoachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D06EE81CA82B7B00C6627C /* CoachViewController.m */; };
 		96D06EEE1CA84FF300C6627C /* CoachCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D06EED1CA84FF300C6627C /* CoachCollectionViewCell.m */; };
+		96D06EF31CA987E700C6627C /* YXChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D06EF21CA987E700C6627C /* YXChatView.m */; };
+		96D06EF51CA9882200C6627C /* YXChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D06EF41CA9882200C6627C /* YXChatView.xib */; };
+		96D06EF81CA98AB700C6627C /* ExerTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D06EF71CA98AB700C6627C /* ExerTypeViewController.m */; };
 		CCEAF88B1CA7A2C3009B6659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEAF88A1CA7A2C3009B6659 /* main.m */; };
 		CCEAF88E1CA7A2C3009B6659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEAF88D1CA7A2C3009B6659 /* AppDelegate.m */; };
 		CCEAF8911CA7A2C3009B6659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEAF8901CA7A2C3009B6659 /* ViewController.m */; };
@@ -30,6 +33,11 @@
 		96D06EE81CA82B7B00C6627C /* CoachViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachViewController.m; sourceTree = "<group>"; };
 		96D06EEC1CA84FF300C6627C /* CoachCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoachCollectionViewCell.h; sourceTree = "<group>"; };
 		96D06EED1CA84FF300C6627C /* CoachCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachCollectionViewCell.m; sourceTree = "<group>"; };
+		96D06EF11CA987E700C6627C /* YXChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXChatView.h; path = Common/YXChatView.h; sourceTree = "<group>"; };
+		96D06EF21CA987E700C6627C /* YXChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXChatView.m; path = Common/YXChatView.m; sourceTree = "<group>"; };
+		96D06EF41CA9882200C6627C /* YXChatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YXChatView.xib; path = Common/YXChatView.xib; sourceTree = "<group>"; };
+		96D06EF61CA98AB700C6627C /* ExerTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerTypeViewController.h; path = ClassCustomize/ExerTypeViewController.h; sourceTree = "<group>"; };
+		96D06EF71CA98AB700C6627C /* ExerTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerTypeViewController.m; path = ClassCustomize/ExerTypeViewController.m; sourceTree = "<group>"; };
 		C27D1AC9ECF01EFF9BC2EE93 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CCEAF8861CA7A2C3009B6659 /* YouXing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouXing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEAF88A1CA7A2C3009B6659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,16 +87,18 @@
 				96757DC71CA7CEE00032E32C /* Startup.Storyboard */,
 				96757DC91CA7D0920032E32C /* StartupViewController.h */,
 				96757DCA1CA7D0920032E32C /* StartupViewController.m */,
-				96D06EEB1CA84FC900C6627C /* CoachSelection */,
 			);
 			name = Startup;
 			sourceTree = "<group>";
 		};
-		96D06EEA1CA84FA700C6627C /* Customize */ = {
+		96D06EEA1CA84FA700C6627C /* ClassCustomize */ = {
 			isa = PBXGroup;
 			children = (
+				96D06EEB1CA84FC900C6627C /* CoachSelection */,
+				96D06EF61CA98AB700C6627C /* ExerTypeViewController.h */,
+				96D06EF71CA98AB700C6627C /* ExerTypeViewController.m */,
 			);
-			name = Customize;
+			name = ClassCustomize;
 			sourceTree = "<group>";
 		};
 		96D06EEB1CA84FC900C6627C /* CoachSelection */ = {
@@ -100,6 +110,24 @@
 				96D06EED1CA84FF300C6627C /* CoachCollectionViewCell.m */,
 			);
 			name = CoachSelection;
+			sourceTree = "<group>";
+		};
+		96D06EEF1CA987BE00C6627C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				96D06EF01CA987C500C6627C /* CommonViews */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		96D06EF01CA987C500C6627C /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				96D06EF11CA987E700C6627C /* YXChatView.h */,
+				96D06EF21CA987E700C6627C /* YXChatView.m */,
+				96D06EF41CA9882200C6627C /* YXChatView.xib */,
+			);
+			name = CommonViews;
 			sourceTree = "<group>";
 		};
 		CCEAF87D1CA7A2C3009B6659 = {
@@ -123,7 +151,8 @@
 		CCEAF8881CA7A2C3009B6659 /* YouXing */ = {
 			isa = PBXGroup;
 			children = (
-				96D06EEA1CA84FA700C6627C /* Customize */,
+				96D06EEF1CA987BE00C6627C /* Common */,
+				96D06EEA1CA84FA700C6627C /* ClassCustomize */,
 				96757DC61CA7CEC00032E32C /* Startup */,
 				CCEAF88C1CA7A2C3009B6659 /* AppDelegate.h */,
 				CCEAF88D1CA7A2C3009B6659 /* AppDelegate.m */,
@@ -207,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D06EF51CA9882200C6627C /* YXChatView.xib in Resources */,
 				96757DC81CA7CEE00032E32C /* Startup.Storyboard in Resources */,
 				CCEAF8991CA7A2C3009B6659 /* LaunchScreen.storyboard in Resources */,
 				CCEAF8961CA7A2C3009B6659 /* Assets.xcassets in Resources */,
@@ -269,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D06EF81CA98AB700C6627C /* ExerTypeViewController.m in Sources */,
 				96757DCB1CA7D0920032E32C /* StartupViewController.m in Sources */,
 				96D06EEE1CA84FF300C6627C /* CoachCollectionViewCell.m in Sources */,
 				96D06EE91CA82B7B00C6627C /* CoachViewController.m in Sources */,
+				96D06EF31CA987E700C6627C /* YXChatView.m in Sources */,
 				CCEAF8911CA7A2C3009B6659 /* ViewController.m in Sources */,
 				CCEAF88E1CA7A2C3009B6659 /* AppDelegate.m in Sources */,
 				CCEAF88B1CA7A2C3009B6659 /* main.m in Sources */,
