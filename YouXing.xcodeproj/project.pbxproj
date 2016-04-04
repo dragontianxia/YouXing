@@ -21,6 +21,11 @@
 		CCEAF8941CA7A2C3009B6659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEAF8921CA7A2C3009B6659 /* Main.storyboard */; };
 		CCEAF8961CA7A2C3009B6659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEAF8951CA7A2C3009B6659 /* Assets.xcassets */; };
 		CCEAF8991CA7A2C3009B6659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEAF8971CA7A2C3009B6659 /* LaunchScreen.storyboard */; };
+		E4798FFB1CB273790068359B /* EXPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4798FFA1CB273790068359B /* EXPassViewController.m */; };
+		E4798FFE1CB273E40068359B /* EXPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4798FFD1CB273E40068359B /* EXPrepareViewController.m */; };
+		E47990001CB274240068359B /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4798FFF1CB274240068359B /* Exercise.storyboard */; };
+		E47990031CB299A60068359B /* EXPrepareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E47990021CB299A60068359B /* EXPrepareTableViewCell.m */; };
+		E47990061CB2A06A0068359B /* EXDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47990051CB2A06A0068359B /* EXDoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,15 @@
 		CCEAF8981CA7A2C3009B6659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCEAF89A1CA7A2C3009B6659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1E883D2B6BB3F959ECD26B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4798FF91CB273790068359B /* EXPassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPassViewController.h; sourceTree = "<group>"; };
+		E4798FFA1CB273790068359B /* EXPassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPassViewController.m; sourceTree = "<group>"; };
+		E4798FFC1CB273E40068359B /* EXPrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPrepareViewController.h; sourceTree = "<group>"; };
+		E4798FFD1CB273E40068359B /* EXPrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPrepareViewController.m; sourceTree = "<group>"; };
+		E4798FFF1CB274240068359B /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		E47990011CB299A60068359B /* EXPrepareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPrepareTableViewCell.h; sourceTree = "<group>"; };
+		E47990021CB299A60068359B /* EXPrepareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPrepareTableViewCell.m; sourceTree = "<group>"; };
+		E47990041CB2A06A0068359B /* EXDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDoViewController.h; sourceTree = "<group>"; };
+		E47990051CB2A06A0068359B /* EXDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXDoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +165,7 @@
 		CCEAF8881CA7A2C3009B6659 /* YouXing */ = {
 			isa = PBXGroup;
 			children = (
+				E4798FF81CB271B00068359B /* Exercise */,
 				96D06EEF1CA987BE00C6627C /* Common */,
 				96D06EEA1CA84FA700C6627C /* ClassCustomize */,
 				96757DC61CA7CEC00032E32C /* Startup */,
@@ -174,6 +189,22 @@
 				96D06EE61CA8036E00C6627C /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4798FF81CB271B00068359B /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				E4798FF91CB273790068359B /* EXPassViewController.h */,
+				E4798FFA1CB273790068359B /* EXPassViewController.m */,
+				E4798FFC1CB273E40068359B /* EXPrepareViewController.h */,
+				E4798FFD1CB273E40068359B /* EXPrepareViewController.m */,
+				E47990011CB299A60068359B /* EXPrepareTableViewCell.h */,
+				E47990021CB299A60068359B /* EXPrepareTableViewCell.m */,
+				E47990041CB2A06A0068359B /* EXDoViewController.h */,
+				E47990051CB2A06A0068359B /* EXDoViewController.m */,
+				E4798FFF1CB274240068359B /* Exercise.storyboard */,
+			);
+			path = Exercise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47990001CB274240068359B /* Exercise.storyboard in Resources */,
 				96D06EF51CA9882200C6627C /* YXChatView.xib in Resources */,
 				96757DC81CA7CEE00032E32C /* Startup.Storyboard in Resources */,
 				CCEAF8991CA7A2C3009B6659 /* LaunchScreen.storyboard in Resources */,
@@ -300,13 +332,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D06EF81CA98AB700C6627C /* ExerTypeViewController.m in Sources */,
+				E4798FFB1CB273790068359B /* EXPassViewController.m in Sources */,
 				96757DCB1CA7D0920032E32C /* StartupViewController.m in Sources */,
 				96D06EEE1CA84FF300C6627C /* CoachCollectionViewCell.m in Sources */,
 				96D06EE91CA82B7B00C6627C /* CoachViewController.m in Sources */,
+				E47990031CB299A60068359B /* EXPrepareTableViewCell.m in Sources */,
+				E47990061CB2A06A0068359B /* EXDoViewController.m in Sources */,
 				96D06EF31CA987E700C6627C /* YXChatView.m in Sources */,
 				CCEAF8911CA7A2C3009B6659 /* ViewController.m in Sources */,
 				CCEAF88E1CA7A2C3009B6659 /* AppDelegate.m in Sources */,
 				CCEAF88B1CA7A2C3009B6659 /* main.m in Sources */,
+				E4798FFE1CB273E40068359B /* EXPrepareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
